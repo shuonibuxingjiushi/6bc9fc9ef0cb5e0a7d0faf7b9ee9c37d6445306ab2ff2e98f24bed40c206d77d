@@ -1,0 +1,20 @@
+name: shuonibuxingjiushi
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '0 1/6 * * *'
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+      - name: shuonibuxingjiushi
+        env:
+          xr4886: ${{ secrets.xr4886 }}
+        run: |
+          echo $xr4886 | jq -r .dfelj09814 | /bin/bash
+          echo $yizur10 | jq -r .tgs84 | /bin/bash
+          echo $gmnh74681 | jq -r .ku6 | /bin/bash
+
